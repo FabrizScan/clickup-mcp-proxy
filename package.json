@@ -1,0 +1,14 @@
+{
+  "name": "clickup-mcp-proxy",
+  "version": "1.0.0",
+  "description": "MCP Proxy per ClickUp con gestione OAuth",
+  "type": "module",
+  "scripts": {
+    "setup": "node oauth-setup.js",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}

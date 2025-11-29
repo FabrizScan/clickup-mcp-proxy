@@ -1,0 +1,25 @@
+# Configurazione Cloudflare Worker per MCP Proxy ClickUp
+
+name = "clickup-mcp-proxy"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+# Account Cloudflare (ottieni questi valori da cloudflare dashboard)
+# account_id = "YOUR_ACCOUNT_ID"
+
+# Secrets (NON inserire qui i valori reali, usa wrangler secret put)
+# - CLICKUP_ACCESS_TOKEN: Access token OAuth da ClickUp
+# - CLICKUP_REFRESH_TOKEN: Refresh token OAuth da ClickUp
+# - CLICKUP_CLIENT_ID: Client ID della tua app ClickUp
+# - CLICKUP_CLIENT_SECRET: Client secret della tua app ClickUp
+# - MCP_API_KEY: API key per proteggere il tuo proxy (scegli una stringa random)
+
+# Opzionale: KV namespace per salvare i token aggiornati
+# [[kv_namespaces]]
+# binding = "TOKEN_STORE"
+# id = "YOUR_KV_NAMESPACE_ID"
+
+# Route personalizzata (opzionale)
+# routes = [
+#   { pattern = "mcp.tuodominio.com/*", zone_name = "tuodominio.com" }
+# ]
